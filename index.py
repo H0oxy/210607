@@ -13,8 +13,31 @@ class Group:
         self.name = name
         self.students = []
 
+    def add(self, student):
+        self.students.append(student)
+
+
+    def remove(self, student):
+        if student in self.students:
+            self.students.remove(student)
+
+
+    def show(self):
+        print(self.students)
 
 student_1 = Student('Моргенштерн Алишер Тагирович', '17.02.1998', 'г.Курган, центр')
 student_2 = Student('Королёв Дмитрий Олегович', '10.10.1997', 'г.Курган, центр')
-group_1 = ('ИТ-33')
-print('student_2.__dict__=', student_2.__dict__)
+group_1 = Group('ИТ-33')
+group_1.add(student_1)
+group_1.add(student_2)
+
+group_1.show()
+group_1.remove(student_2)
+group_1.show()
+
+for el in group_1.students:
+    print(el.birth_date)
+
+del group_1
+
+print(student_1)
