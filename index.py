@@ -1,30 +1,9 @@
 class Student(object):
-    """docstring"""
+
 
     def __init__(self):
-        """Constructor"""
+        self.name = name
+        self.dateofbirth = dateofbirth
+        self.address = address
         pass
 
-
-class Name(object):
-    """docstring"""
-
-    def __init__(self):
-        """Constructor"""
-        pass
-
-
-class DoB(object):
-    """docstring"""
-
-    def __init__(self):
-        """Constructor"""
-        pass
-
-
-class Address(object):
-    """docstring"""
-
-    def __init__(self):
-        """Constructor"""
-        pass
